@@ -10,18 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var angular2_1 = require('angular2/angular2');
-var ionic_ng2_1 = require('./ionic_ng2');
-var dudes_1 = require('./dudes');
 var App = (function () {
     function App() {
     }
+    __decorate([
+        angular2_1.Input(), 
+        __metadata('design:type', Object)
+    ], App.prototype, "panoUrl");
     App = __decorate([
         angular2_1.Component({
             selector: 'cardboard-gl'
         }),
         angular2_1.View({
-            template: "\n        <ion-pane class=\"pane\">\n            <ion-header-bar class=\"bar-stable bar bar-header\">\n                <h1 class=\"title\">Cardboard</h1>\n                <div class=\"buttons\">\n                    <button class=\"button button-clear\"><i class=\"icon ion-gear-a\"></i></button>\n                </div>\n            </ion-header-bar>\n            <ion-content scroll=\"false\" padding=\"false\" class=\"scroll-content-false\">\n                <dudes></dudes>\n            </ion-content>\n        </ion-pane>\n        ",
-            directives: [ionic_ng2_1.IonPane, dudes_1.Dudes]
+            template: "\n        <a-scene>\n          <a-sky src=\"img/panorama2.jpg\" rotation=\"0 -130 0\"></a-sky>\n        </a-scene>\n        "
         }), 
         __metadata('design:paramtypes', [])
     ], App);
