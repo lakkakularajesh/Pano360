@@ -13,7 +13,7 @@ Next, we should modify the `config.xml` file to force the app to be in landscape
   <preference name="orientation" value="landscape" />
 ```
 
-* Chnage directory to myApp, remove www directory, clone this repository as www.
+* Chnage directory to myApp, remove www directory, clone this repository as www
 
 ```bash
 $ ionic platform add ios
